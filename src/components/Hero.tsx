@@ -95,7 +95,7 @@ const Hero = () => {
               className="flex flex-col sm:flex-row gap-4"
             >
               <a
-                href="https://drive.google.com/file/d/1G0YtAnfwduRaLSaJBuKUbYJPQm3DeDYl/view?usp=sharing"
+                href="https://drive.google.com/file/d/1-TWzKemV9rpOY2lEi55OxLJG5nNrXlYn/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary inline-flex items-center justify-center"

@@ -6,7 +6,7 @@ const Experience = () => {
     {
       company: "Meteorite Labs",
       position: "Software Engineer Intern",
-      duration: "April 2025 - Present",
+      duration: "June 2025 - Present",
       location: "Remote",
       certificate: "",
       description: "Engineered responsive interfaces with Next.js and TypeScript, resulting in seamless user experiences. Integrated Strapi CMS using REST/GraphQL APIs while implementing AI features via OpenAI/Pinecone. Developed a modular component library that enhanced development efficiency and code reusability by 25%.",
