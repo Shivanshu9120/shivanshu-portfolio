@@ -238,13 +238,13 @@ const Experience = () => {
                  <h3 className="text-xl font-bold mb-4 text-primary-500">Backend Development</h3>
                  <div className="space-y-3">
                    <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
-                     <span className="font-medium text-primary">Django</span>
+                     <span className="font-medium text-primary">MongoDB</span>
                      <span className="text-sm text-green-500 bg-green-500/20 px-2 py-1 rounded">Advanced</span>
                    </div>
                    <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
-                     <span className="font-medium text-primary">Django REST Framework</span>
+                     <span className="font-medium text-primary">REST API</span>
                      <span className="text-sm text-green-500 bg-green-500/20 px-2 py-1 rounded">Advanced</span>
-                   </div>
+                   </div> 
                    <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
                      <span className="font-medium text-primary">FastAPI</span>
                      <span className="text-sm text-blue-500 bg-blue-500/20 px-2 py-1 rounded">Intermediate</span>
