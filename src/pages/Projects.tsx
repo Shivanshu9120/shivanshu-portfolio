@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import ProjectCard from '../components/ProjectCard'
+import SEO from '../components/SEO'
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('All')
@@ -80,7 +81,9 @@ const Projects = () => {
     : projects.filter(project => project.category === activeFilter)
 
   return (
-    <div className="pt-16">
+    <>
+      <SEO page="projects" />
+      <div className="pt-16">
       <section className="section-padding">
         <div className="container-custom">
           <motion.div
@@ -161,7 +164,8 @@ const Projects = () => {
           )}
         </div>
       </section>
-    </div>
+      </div>
+    </>
   )
 }
 

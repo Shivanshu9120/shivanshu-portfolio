@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { Code, BookOpen, Users, Heart, Book } from 'lucide-react'
+import SEO from '../components/SEO'
 
 const About = () => {
   const skillCategories = [
@@ -53,7 +54,9 @@ const About = () => {
   ]
 
   return (
-    <div className="pt-16">
+    <>
+      <SEO page="about" />
+      <div className="pt-16">
       <section className="section-padding">
         <div className="container-custom">
           {/* Header */}
@@ -372,7 +375,8 @@ const About = () => {
           </motion.div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   )
 }
 

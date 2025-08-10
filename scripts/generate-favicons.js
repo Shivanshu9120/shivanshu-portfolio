@@ -6,18 +6,22 @@
  * 
  * Prerequisites:
  * - Install sharp: npm install sharp
- * - Install svg2png: npm install svg2png
  */
 
-const fs = require('fs');
-const path = require('path');
+import sharp from 'sharp';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 console.log('🎨 Favicon Generation Script');
 console.log('============================');
 
 // Check if required packages are installed
 try {
-  require('sharp');
+  // Test sharp import
   console.log('✅ Sharp package found');
 } catch (error) {
   console.log('❌ Sharp package not found. Install with: npm install sharp');
@@ -35,8 +39,6 @@ if (!fs.existsSync(publicDir)) {
 // Generate favicon files
 async function generateFavicons() {
   try {
-    const sharp = require('sharp');
-    
     // Create a simple colored square as favicon (fallback if SVG processing fails)
     const size = 32;
     const buffer = Buffer.alloc(size * size * 4);
@@ -97,5 +99,5 @@ async function generateFavicons() {
   }
 }
 
-// Run the generator
+// Run the script
 generateFavicons();

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { ExternalLink, Trophy } from 'lucide-react'
+import SEO from '../components/SEO'
 
 const Profile = () => {
   const profiles = [
@@ -87,7 +88,9 @@ const Profile = () => {
   ]
 
   return (
-    <div className="pt-16">
+    <>
+      <SEO page="profile" />
+      <div className="pt-16">
       <section className="section-padding">
         <div className="container-custom">
           {/* Header */}
@@ -227,7 +230,8 @@ const Profile = () => {
           </motion.div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   )
 }
 

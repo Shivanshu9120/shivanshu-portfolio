@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, Code, CheckCircle, AlertCircle } from 'lucide-react'
 import emailjs from '@emailjs/browser'
 import { EMAILJS_CONFIG } from '../config/emailjs'
+import SEO from '../components/SEO'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -109,7 +110,9 @@ const Contact = () => {
   }
 
   return (
-    <div className="pt-16">
+    <>
+      <SEO page="contact" />
+      <div className="pt-16">
       <section className="section-padding">
         <div className="container-custom">
           {/* Header */}
@@ -429,7 +432,8 @@ const Contact = () => {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   )
 }
 

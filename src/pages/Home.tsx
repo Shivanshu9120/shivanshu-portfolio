@@ -1,5 +1,6 @@
 import Hero from '../components/Hero'
 import ProjectCard from '../components/ProjectCard'
+import SEO from '../components/SEO'
 import { motion } from 'framer-motion'
 import { Star, Quote } from 'lucide-react'
 
@@ -56,8 +57,10 @@ const Home = () => {
   ]
 
   return (
-    <div className="pt-16">
-      <Hero />
+    <>
+      <SEO page="home" />
+      <div className="pt-16">
+        <Hero />
       
       {/* Featured Projects Section */}
       <section className="section-padding bg-gray-50 dark:bg-dark-800/50 transition-colors duration-300">
@@ -131,7 +134,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   )
 }
 

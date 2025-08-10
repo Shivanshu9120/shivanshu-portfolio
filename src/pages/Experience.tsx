@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { Calendar, MapPin, ExternalLink, Award, Zap, Code } from 'lucide-react'
+import SEO from '../components/SEO'
 
 const Experience = () => {
   const internships = [
@@ -35,7 +36,9 @@ const Experience = () => {
   ]
 
   return (
-    <div className="pt-16">
+    <>
+      <SEO page="experience" />
+      <div className="pt-16">
       <section className="section-padding">
         <div className="container-custom">
           {/* Header */}
@@ -486,7 +489,8 @@ const Experience = () => {
           </motion.div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   )
 }
 
