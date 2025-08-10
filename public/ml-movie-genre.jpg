@@ -1,0 +1,17 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#1e293b"/>
+  <rect x="80" y="80" width="240" height="140" rx="10" fill="#334155" stroke="#64748b" stroke-width="2"/>
+  <rect x="100" y="100" width="200" height="100" rx="5" fill="#475569"/>
+  <text x="200" y="130" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="14" font-weight="bold">Movie Genre</text>
+  <text x="200" y="150" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="14" font-weight="bold">Classification</text>
+  <text x="200" y="170" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="14" font-weight="bold">using NLP</text>
+  <text x="200" y="190" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="12">Text Classification ML</text>
+  <circle cx="120" cy="60" r="12" fill="#ef4444" opacity="0.8"/>
+  <circle cx="280" cy="60" r="12" fill="#10b981" opacity="0.8"/>
+  <circle cx="200" cy="40" r="12" fill="#3b82f6" opacity="0.8"/>
+  <path d="M 120 60 Q 200 40 280 60" stroke="#64748b" stroke-width="2" fill="none" opacity="0.6"/>
+  <rect x="90" y="220" width="60" height="20" rx="5" fill="#ef4444"/>
+  <rect x="160" y="220" width="60" height="20" rx="5" fill="#f59e0b"/>
+  <rect x="230" y="220" width="60" height="20" rx="5" fill="#10b981"/>
+  <rect x="300" y="220" width="60" height="20" rx="5" fill="#3b82f6"/>
+</svg>

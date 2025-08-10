@@ -7,6 +7,26 @@ import { Star, Quote } from 'lucide-react'
 const Home = () => {
   const featuredProjects = [
     {
+      title: "Chess App",
+      description: "A modern chess application built with TypeScript, featuring an intuitive interface for playing chess games. Implemented with clean architecture and responsive design for an engaging chess experience.",
+      technologies: ["TypeScript", "React", "Chess.js", "Responsive Design"],
+      image: "/chess-app.jpg",
+      liveUrl: "https://chess-app-coral.vercel.app/",
+      githubUrl: "https://github.com/Shivanshu9120/chess-app.git",
+      year: "2024",
+      category: "Frontend"
+    },
+    {
+      title: "Cricket Scorer",
+      description: "A comprehensive cricket scoring application that helps track matches, runs, wickets, and player statistics in real-time. Built with modern web technologies for cricket enthusiasts and scorekeepers.",
+      technologies: ["React", "TypeScript", "Local Storage", "Responsive Design"],
+      image: "/cricket-scorer.jpg",
+      liveUrl: "https://cricket-scorer-puce.vercel.app/",
+      githubUrl: "https://github.com/Shivanshu9120/cricket-scorer.git",
+      year: "2024",
+      category: "Frontend"
+    },
+    {
       title: "Full Stack Club Management Website",
       description: "Developed a MERN stack platform with role-based dashboards where Superadmin assigns roles, Admins manage events and notices, and Users register for events requiring approval. Implemented authentication, approval workflows, and seamless CRUD operations for efficient club management. Designed a responsive, modern UI using React and Tailwind CSS for an optimized user experience.",
       technologies: ["MERN Stack", "React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
@@ -16,27 +36,6 @@ const Home = () => {
       backendUrl: "https://github.com/Shivanshu9120/OptimixClub_Backend.git",
       year: "2024",
       category: "Full Stack"
-    },
-    {
-      title: "Full Stack Chat Application",
-      description: "Built a real-time chat app using MERN stack and Socket.io, supporting 1-on-1 chats, group chats, and group creation. Implemented JWT and bcrypt-based authentication for secure user login and data protection. Designed a responsive and modern UI using React and Tailwind CSS for a seamless messaging experience.",
-      technologies: ["MERN Stack", "Socket.io", "JWT", "bcrypt", "React", "Tailwind CSS"],
-      image: "/project2.jpg",
-      liveUrl: "https://messenger-eight-gamma.vercel.app",
-      githubUrl: "https://github.com/Shivanshu9120/Messenger-frontend.git",
-      backendUrl: "https://github.com/Shivanshu9120/Messenger-backend.git",
-      year: "2024",
-      category: "Full Stack"
-    },
-    {
-      title: "Gemini Clone",
-      description: "Developed a responsive React app with dynamic sidebar and context-based state management. Integrated Google Generative AI for asynchronous user interactions and real-time updates.",
-      technologies: ["React", "Google AI", "Context API", "Responsive Design"],
-      image: "/project3.jpg",
-      liveUrl: "https://gemini-clone-psi-kohl.vercel.app/",
-      githubUrl: "https://github.com/Shivanshu9120/Gemini-clone.git",
-      year: "2024",
-      category: "Frontend"
     }
   ]
 

@@ -7,6 +7,68 @@ const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('All')
 
   const projects = [
+    // Frontend Projects
+    {
+      title: "Chess App",
+      description: "A modern chess application built with TypeScript, featuring an intuitive interface for playing chess games. Implemented with clean architecture and responsive design for an engaging chess experience.",
+      technologies: ["TypeScript", "React", "Chess.js", "Responsive Design"],
+      image: "/chess-app.jpg",
+      liveUrl: "https://chess-app-coral.vercel.app/",
+      githubUrl: "https://github.com/Shivanshu9120/chess-app.git",
+      year: "2024",
+      category: "Frontend"
+    },
+    {
+      title: "Cricket Scorer",
+      description: "A comprehensive cricket scoring application that helps track matches, runs, wickets, and player statistics in real-time. Built with modern web technologies for cricket enthusiasts and scorekeepers.",
+      technologies: ["React", "TypeScript", "Local Storage", "Responsive Design"],
+      image: "/cricket-scorer.jpg",
+      liveUrl: "https://cricket-scorer-puce.vercel.app/",
+      githubUrl: "https://github.com/Shivanshu9120/cricket-scorer.git",
+      year: "2024",
+      category: "Frontend"
+    },
+    {
+      title: "Rexby Clone",
+      description: "A clone of the popular Rexby application built with modern web technologies. Features include responsive design, user authentication, and core functionality replication.",
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Responsive Design"],
+      image: "/rexby-clone.jpg",
+      liveUrl: "https://rexby-clone-three.vercel.app/",
+      githubUrl: "https://github.com/Shivanshu9120/rexby-clone.git",
+      year: "2024",
+      category: "Frontend"
+    },
+    {
+      title: "Gemini Clone",
+      description: "Developed a responsive React app with dynamic sidebar and context-based state management. Integrated Google Generative AI for asynchronous user interactions and real-time updates.",
+      technologies: ["React", "Google AI", "Context API", "Responsive Design"],
+      image: "/project3.jpg",
+      liveUrl: "https://gemini-clone-psi-kohl.vercel.app/",
+      githubUrl: "https://github.com/Shivanshu9120/Gemini-clone.git",
+      year: "2024",
+      category: "Frontend"
+    },
+    {
+      title: "Weather Prediction App",
+      description: "Developed a basic Weather App using HTML, CSS, and JavaScript, which allows users to fetch and display real-time weather data for any city using the OpenWeatherMap API. Implemented dynamic features like weather icons and error handling for user input.",
+      technologies: ["HTML", "CSS", "JavaScript", "OpenWeatherMap API"],
+      image: "/project5.jpg",
+      liveUrl: "https://shivanshu9120.github.io/WeatherApp/",
+      githubUrl: "https://github.com/Shivanshu9120/WeatherApp.git",
+      year: "2024",
+      category: "Frontend"
+    },
+    {
+      title: "Text to Speech Convertor",
+      description: "Developed a text-to-speech converter using HTML, CSS, and JavaScript, enabling real-time voice output from user-inputted text. Integrated browser-based speech synthesis API for seamless and cross-platform voice playback functionality.",
+      technologies: ["HTML", "CSS", "JavaScript", "Speech Synthesis API"],
+      image: "/project6.jpg",
+      liveUrl: "https://shivanshu9120.github.io/Text-to-speech/",
+      githubUrl: "https://github.com/Shivanshu9120/Text-to-speech.git",
+      year: "2024",
+      category: "Frontend"
+    },
+
     // Full Stack Projects
     {
       title: "Full Stack Club Management Website",
@@ -41,36 +103,46 @@ const Projects = () => {
       category: "Full Stack"
     },
 
-    // Frontend Projects
+    // Machine Learning Projects
     {
-      title: "Gemini Clone",
-      description: "Developed a responsive React app with dynamic sidebar and context-based state management. Integrated Google Generative AI for asynchronous user interactions and real-time updates.",
-      technologies: ["React", "Google AI", "Context API", "Responsive Design"],
-      image: "/project3.jpg",
-      liveUrl: "https://gemini-clone-psi-kohl.vercel.app/",
-      githubUrl: "https://github.com/Shivanshu9120/Gemini-clone.git",
+      title: "Credit Card Fraud Detection",
+      description: "Developed a machine learning model to detect fraudulent credit card transactions using various algorithms. Implemented data preprocessing, feature engineering, and model evaluation to achieve high accuracy in identifying fraudulent activities.",
+      technologies: ["Python", "Scikit-learn", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Machine Learning"],
+      image: "/ml-credit-card-fraud.jpg",
+      liveUrl: "https://github.com/Shivanshu9120/ML-Projects",
+      githubUrl: "https://github.com/Shivanshu9120/ML-Projects.git",
       year: "2024",
-      category: "Frontend"
+      category: "ML/AI"
     },
     {
-      title: "Weather Prediction App",
-      description: "Developed a basic Weather App using HTML, CSS, and JavaScript, which allows users to fetch and display real-time weather data for any city using the OpenWeatherMap API. Implemented dynamic features like weather icons and error handling for user input.",
-      technologies: ["HTML", "CSS", "JavaScript", "OpenWeatherMap API"],
-      image: "/project5.jpg",
-      liveUrl: "https://shivanshu9120.github.io/WeatherApp/",
-      githubUrl: "https://github.com/Shivanshu9120/WeatherApp.git",
+      title: "Customer Churn Prediction",
+      description: "Built a predictive model to identify customers likely to churn using machine learning techniques. Analyzed customer behavior patterns and implemented classification algorithms to predict customer retention with high accuracy.",
+      technologies: ["Python", "Scikit-learn", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Classification"],
+      image: "/ml-customer-churn.jpg",
+      liveUrl: "https://github.com/Shivanshu9120/ML-Projects",
+      githubUrl: "https://github.com/Shivanshu9120/ML-Projects.git",
       year: "2024",
-      category: "Frontend"
+      category: "ML/AI"
     },
     {
-      title: "Text to Speech Convertor",
-      description: "Developed a text-to-speech converter using HTML, CSS, and JavaScript, enabling real-time voice output from user-inputted text. Integrated browser-based speech synthesis API for seamless and cross-platform voice playback functionality.",
-      technologies: ["HTML", "CSS", "JavaScript", "Speech Synthesis API"],
-      image: "/project6.jpg",
-      liveUrl: "https://shivanshu9120.github.io/Text-to-speech/",
-      githubUrl: "https://github.com/Shivanshu9120/Text-to-speech.git",
+      title: "Movie Genre Classification",
+      description: "Developed a natural language processing model for movie genre classification based on plot descriptions. Implemented text preprocessing, feature extraction, and multi-label classification to accurately categorize movies into multiple genres.",
+      technologies: ["Python", "NLTK", "Scikit-learn", "Pandas", "NumPy", "Matplotlib", "NLP", "Text Classification"],
+      image: "/ml-movie-genre.jpg",
+      liveUrl: "https://github.com/Shivanshu9120/ML-Projects",
+      githubUrl: "https://github.com/Shivanshu9120/ML-Projects.git",
       year: "2024",
-      category: "Frontend"
+      category: "ML/AI"
+    },
+    {
+      title: "Spam SMS Detection",
+      description: "Built a text classification model to detect spam SMS messages using natural language processing and machine learning. Implemented text preprocessing, feature extraction, and binary classification to filter out unwanted messages effectively.",
+      technologies: ["Python", "NLTK", "Scikit-learn", "Pandas", "NumPy", "Matplotlib", "NLP", "Text Classification"],
+      image: "/ml-spam-sms.jpg",
+      liveUrl: "https://github.com/Shivanshu9120/ML-Projects",
+      githubUrl: "https://github.com/Shivanshu9120/ML-Projects.git",
+      year: "2024",
+      category: "ML/AI"
     }
   ]
 

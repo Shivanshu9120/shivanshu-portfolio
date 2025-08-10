@@ -1,0 +1,16 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f3f4f6"/>
+  <rect x="50" y="50" width="300" height="200" fill="#3b82f6" rx="8"/>
+  
+  <!-- App interface elements -->
+  <rect x="70" y="80" width="120" height="30" fill="#ffffff" rx="4"/>
+  <rect x="210" y="80" width="120" height="30" fill="#ffffff" rx="4"/>
+  
+  <rect x="70" y="120" width="260" height="40" fill="#ffffff" rx="4"/>
+  <rect x="70" y="170" width="260" height="40" fill="#ffffff" rx="4"/>
+  
+  <!-- Icon -->
+  <circle cx="200" cy="140" r="8" fill="#3b82f6"/>
+  
+  <text x="200" y="250" text-anchor="middle" fill="#374151" font-family="Arial" font-size="18" font-weight="bold">Rexby Clone</text>
+</svg>

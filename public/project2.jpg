@@ -1,0 +1,23 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f3f4f6"/>
+  <rect x="50" y="50" width="300" height="200" fill="#7c2d12" rx="8"/>
+  
+  <!-- Chat interface -->
+  <rect x="70" y="80" width="200" height="120" fill="#ffffff" rx="4"/>
+  
+  <!-- Chat bubbles -->
+  <rect x="80" y="90" width="80" height="25" fill="#3b82f6" rx="12"/>
+  <text x="120" y="105" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="10">Hello!</text>
+  
+  <rect x="180" y="120" width="80" height="25" fill="#10b981" rx="12"/>
+  <text x="220" y="135" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="10">Hi there!</text>
+  
+  <rect x="80" y="150" width="80" height="25" fill="#3b82f6" rx="12"/>
+  <text x="120" y="165" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="10">How are you?</text>
+  
+  <!-- Input field -->
+  <rect x="70" y="210" width="200" height="30" fill="#ffffff" rx="4"/>
+  <text x="170" y="230" text-anchor="middle" fill="#6b7280" font-family="Arial" font-size="12">Type a message...</text>
+  
+  <text x="200" y="250" text-anchor="middle" fill="#374151" font-family="Arial" font-size="16" font-weight="bold">Chat Application</text>
+</svg>

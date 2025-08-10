@@ -1,0 +1,24 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f3f4f6"/>
+  <rect x="50" y="50" width="300" height="200" fill="#8b5cf6" rx="8"/>
+  
+  <!-- Speaker icon -->
+  <rect x="120" y="100" width="20" height="40" fill="#ffffff" rx="2"/>
+  <polygon points="140,100 160,90 160,150 140,140" fill="#ffffff"/>
+  
+  <!-- Sound waves -->
+  <path d="M 170 120 Q 180 110, 190 120 Q 200 130, 210 120 Q 220 110, 230 120" 
+        fill="none" stroke="#ffffff" stroke-width="3"/>
+  <path d="M 170 130 Q 180 120, 190 130 Q 200 140, 210 130 Q 220 120, 230 130" 
+        fill="none" stroke="#ffffff" stroke-width="3"/>
+  
+  <!-- Text input -->
+  <rect x="70" y="180" width="200" height="40" fill="#ffffff" rx="4"/>
+  <text x="170" y="205" text-anchor="middle" fill="#8b5cf6" font-family="Arial" font-size="12">Enter text to convert to speech...</text>
+  
+  <!-- Play button -->
+  <circle cx="300" cy="200" r="20" fill="#ffffff"/>
+  <polygon points="295,190 295,210 315,200" fill="#8b5cf6"/>
+  
+  <text x="200" y="250" text-anchor="middle" fill="#374151" font-family="Arial" font-size="16" font-weight="bold">Text to Speech</text>
+</svg>
