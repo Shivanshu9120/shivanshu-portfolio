@@ -1,0 +1,23 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f3f4f6"/>
+  <rect x="50" y="50" width="300" height="200" fill="#0ea5e9" rx="8"/>
+  
+  <!-- Sun -->
+  <circle cx="150" cy="120" r="25" fill="#fbbf24"/>
+  <circle cx="150" cy="120" r="35" fill="none" stroke="#fbbf24" stroke-width="2"/>
+  
+  <!-- Weather info -->
+  <rect x="200" y="80" width="120" height="60" fill="#ffffff" rx="4"/>
+  <text x="260" y="105" text-anchor="middle" fill="#0ea5e9" font-family="Arial" font-size="16" font-weight="bold">25°C</text>
+  <text x="260" y="125" text-anchor="middle" fill="#0ea5e9" font-family="Arial" font-size="12">Sunny</text>
+  
+  <!-- Location -->
+  <rect x="70" y="180" width="200" height="30" fill="#ffffff" rx="4"/>
+  <text x="170" y="200" text-anchor="middle" fill="#0ea5e9" font-family="Arial" font-size="12">New York, USA</text>
+  
+  <!-- Search bar -->
+  <rect x="70" y="220" width="200" height="25" fill="#ffffff" rx="4"/>
+  <text x="170" y="235" text-anchor="middle" fill="#9ca3af" font-family="Arial" font-size="10">Search city...</text>
+  
+  <text x="200" y="250" text-anchor="middle" fill="#374151" font-family="Arial" font-size="16" font-weight="bold">Weather App</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#1e293b"/>
+  <circle cx="200" cy="150" r="80" fill="#334155" stroke="#64748b" stroke-width="2"/>
+  <circle cx="200" cy="150" r="60" fill="#475569" stroke="#64748b" stroke-width="2"/>
+  <circle cx="200" cy="150" r="40" fill="#64748b" stroke="#64748b" stroke-width="2"/>
+  <text x="200" y="140" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="14" font-weight="bold">Customer</text>
+  <text x="200" y="155" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="14" font-weight="bold">Churn</text>
+  <text x="200" y="170" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="14" font-weight="bold">Prediction</text>
+  <text x="200" y="190" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="12">ML Classification</text>
+  <path d="M 120 150 L 280 150" stroke="#64748b" stroke-width="2" opacity="0.6"/>
+  <path d="M 200 120 L 200 180" stroke="#64748b" stroke-width="2" opacity="0.6"/>
+  <circle cx="150" cy="100" r="8" fill="#ef4444" opacity="0.8"/>
+  <circle cx="250" cy="100" r="8" fill="#f59e0b" opacity="0.8"/>
+  <circle cx="150" cy="200" r="8" fill="#10b981" opacity="0.8"/>
+  <circle cx="250" cy="200" r="8" fill="#3b82f6" opacity="0.8"/>
+</svg>

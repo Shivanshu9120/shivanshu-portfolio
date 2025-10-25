@@ -1,0 +1,27 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f3f4f6"/>
+  <rect x="50" y="50" width="300" height="200" fill="#1e293b" rx="8"/>
+  
+  <!-- AI interface -->
+  <rect x="70" y="80" width="120" height="160" fill="#334155" rx="4"/>
+  
+  <!-- Sidebar items -->
+  <rect x="80" y="100" width="100" height="20" fill="#475569" rx="4"/>
+  <rect x="80" y="130" width="100" height="20" fill="#475569" rx="4"/>
+  <rect x="80" y="160" width="100" height="20" fill="#475569" rx="4"/>
+  <rect x="80" y="190" width="100" height="20" fill="#475569" rx="4"/>
+  
+  <!-- Main content -->
+  <rect x="200" y="80" width="140" height="100" fill="#475569" rx="4"/>
+  <text x="270" y="105" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="10">AI Response</text>
+  
+  <!-- Input field -->
+  <rect x="200" y="190" width="140" height="30" fill="#475569" rx="4"/>
+  <text x="270" y="210" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="10">Ask me anything...</text>
+  
+  <!-- AI icon -->
+  <circle cx="270" cy="140" r="15" fill="#06b6d4"/>
+  <text x="270" y="145" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="12" font-weight="bold">AI</text>
+  
+  <text x="200" y="250" text-anchor="middle" fill="#374151" font-family="Arial" font-size="16" font-weight="bold">Gemini Clone</text>
+</svg>

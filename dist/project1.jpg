@@ -1,0 +1,16 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f3f4f6"/>
+  <rect x="50" y="50" width="300" height="200" fill="#1e40af" rx="8"/>
+  
+  <!-- Dashboard elements -->
+  <rect x="70" y="80" width="80" height="40" fill="#ffffff" rx="4"/>
+  <rect x="160" y="80" width="80" height="40" fill="#ffffff" rx="4"/>
+  <rect x="250" y="80" width="80" height="40" fill="#ffffff" rx="4"/>
+  
+  <rect x="70" y="130" width="120" height="60" fill="#ffffff" rx="4"/>
+  <rect x="200" y="130" width="120" height="60" fill="#ffffff" rx="4"/>
+  
+  <rect x="70" y="200" width="250" height="30" fill="#ffffff" rx="4"/>
+  
+  <text x="200" y="250" text-anchor="middle" fill="#374151" font-family="Arial" font-size="16" font-weight="bold">Club Management</text>
+</svg>
