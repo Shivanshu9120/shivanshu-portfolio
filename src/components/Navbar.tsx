@@ -24,8 +24,12 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo with Profile Photo */}
           <Link to="/" className="flex items-center space-x-3 text-2xl font-bold text-primary-500">
-            <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-500/30 flex-shrink-0 bg-primary-500/10 flex items-center justify-center">
-              <User className="w-6 h-6 text-primary-500" />
+            <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-500/30 flex-shrink-0">
+              <img 
+                src="/Profile.png" 
+                alt="Shivanshu Singh" 
+                className="w-full h-full object-cover"
+              />
             </div>
             <span>Shivanshu Singh</span>
           </Link>
