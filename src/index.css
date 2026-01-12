@@ -59,4 +59,38 @@
   .bg-tertiary {
     @apply bg-gray-100 dark:bg-dark-700;
   }
+
+  /* Certificate iframe container - hide scrollbars and center content */
+  .certificate-iframe-container {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    position: relative;
+    overflow: hidden !important;
+  }
+
+  .certificate-iframe-container::-webkit-scrollbar {
+    display: none !important; /* Chrome, Safari, Opera */
+    width: 0 !important;
+    height: 0 !important;
+  }
+
+  .certificate-iframe-container iframe {
+    scrollbar-width: none !important; /* Firefox */
+    -ms-overflow-style: none !important; /* IE and Edge */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.75);
+    transform-origin: center center;
+    width: 133.33%;
+    height: 133.33%;
+    border: none;
+    overflow: hidden;
+  }
+
+  .certificate-iframe-container iframe::-webkit-scrollbar {
+    display: none !important; /* Chrome, Safari, Opera */
+    width: 0 !important;
+    height: 0 !important;
+  }
 } 

@@ -31,8 +31,20 @@ const Experience = () => {
     certificate: string;
     image: string;
   }> = [
-    // Currently no certifications available
-    // Placeholder for future certifications
+    {
+      name: "Frontend Developer (React)",
+      issuer: "HackerRank",
+      date: "2025",
+      certificate: "https://www.hackerrank.com/certificates/iframe/c943ce70b4e0",
+      image: ""
+    },
+    {
+      name: "CSS (Basic)",
+      issuer: "HackerRank",
+      date: "2025",
+      certificate: "https://www.hackerrank.com/certificates/iframe/abc6fe7fbcdb",
+      image: ""
+    }
   ]
 
   return (
@@ -421,7 +433,7 @@ const Experience = () => {
           >
             <h2 className="text-3xl font-bold mb-8 text-center text-primary">Certifications</h2>
             {certifications.length > 0 ? (
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid md:grid-cols-2 gap-6">
                 {certifications.map((cert, index) => (
                   <motion.div
                     key={cert.name}
@@ -430,22 +442,27 @@ const Experience = () => {
                     transition={{ duration: 0.5, delay: 1.7 + index * 0.1 }}
                     className="card p-6 hover:border-primary-500/50 transition-colors duration-200"
                   >
-                    <div className="text-center space-y-4">
-                      <div className="bg-gradient-to-br from-primary-500/20 to-purple-500/20 rounded-lg p-4">
-                        <div className="text-3xl mb-2">🏆</div>
-                      </div>
+                    <div className="space-y-4">
                       <div>
-                        <h3 className="font-semibold text-primary mb-1">{cert.name}</h3>
+                        <h3 className="font-semibold text-primary mb-1 text-lg">{cert.name}</h3>
                         <p className="text-sm text-secondary">{cert.issuer}</p>
                         <p className="text-xs text-muted">{cert.date}</p>
+                      </div>
+                      <div className="certificate-iframe-container w-full h-80 border border-gray-300 dark:border-dark-600 rounded bg-gray-50 dark:bg-dark-800">
+                        <iframe
+                          src={cert.certificate}
+                          title={`${cert.name} Certificate`}
+                          allowFullScreen
+                          loading="lazy"
+                        />
                       </div>
                       <a
                         href={cert.certificate}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="btn-primary inline-flex items-center text-sm"
+                        className="btn-primary inline-flex items-center text-sm w-full justify-center"
                       >
-                        View Certificate
+                        View Full Certificate
                         <ExternalLink className="w-3 h-3 ml-1" />
                       </a>
                     </div>

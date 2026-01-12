@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Code, BookOpen, Users, Heart, Book } from 'lucide-react'
+import { Code, BookOpen, Users, Heart, Book, ExternalLink } from 'lucide-react'
 import SEO from '../components/SEO'
 
 const About = () => {
@@ -253,33 +253,76 @@ const About = () => {
               >
                 <h3 className="text-xl font-bold mb-4 text-primary-500">Certifications</h3>
                 <div className="space-y-4">
+                  {/* HackerRank Certifications */}
+                  <div className="space-y-4">
+                    <div className="p-4 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                      <h4 className="font-semibold text-primary mb-2">Frontend Developer (React)</h4>
+                      <p className="text-sm text-secondary mb-3">HackerRank</p>
+                      <div className="certificate-iframe-container w-full h-80 border border-gray-300 dark:border-dark-600 rounded bg-gray-50 dark:bg-dark-800">
+                        <iframe
+                          src="https://www.hackerrank.com/certificates/iframe/c943ce70b4e0"
+                          title="Frontend Developer (React) Certificate"
+                          allowFullScreen
+                          loading="lazy"
+                        />
+                      </div>
+                      <a
+                        href="https://www.hackerrank.com/certificates/iframe/c943ce70b4e0"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn-primary inline-flex items-center text-sm w-full justify-center mt-3"
+                      >
+                        View Full Certificate
+                        <ExternalLink className="w-3 h-3 ml-1" />
+                      </a>
+                    </div>
+                    
+                    <div className="p-4 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                      <h4 className="font-semibold text-primary mb-2">CSS (Basic)</h4>
+                      <p className="text-sm text-secondary mb-3">HackerRank</p>
+                      <div className="certificate-iframe-container w-full h-80 border border-gray-300 dark:border-dark-600 rounded bg-gray-50 dark:bg-dark-800">
+                        <iframe
+                          src="https://www.hackerrank.com/certificates/iframe/abc6fe7fbcdb"
+                          title="CSS (Basic) Certificate"
+                          allowFullScreen
+                          loading="lazy"
+                        />
+                      </div>
+                      <a
+                        href="https://www.hackerrank.com/certificates/iframe/abc6fe7fbcdb"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn-primary inline-flex items-center text-sm w-full justify-center mt-3"
+                      >
+                        View Full Certificate
+                        <ExternalLink className="w-3 h-3 ml-1" />
+                      </a>
+                    </div>
+                  </div>
+
+                  {/* Currently Pursuing Section */}
                   <div className="text-center p-6 bg-gray-100 dark:bg-dark-700 rounded-lg">
                     <div className="text-3xl mb-3">📚</div>
                     <h4 className="font-medium text-primary mb-2">Currently Pursuing</h4>
-                    <p className="text-sm text-secondary">
+                    <p className="text-sm text-secondary mb-3">
                       Actively working on obtaining relevant certifications to enhance my professional profile
                     </p>
-                  </div>
-                  <div className="grid grid-cols-2 gap-3 text-xs">
-                    <div className="p-2 bg-gray-200 dark:bg-dark-600 rounded text-center">
-                      <div className="text-lg mb-1">🌐</div>
-                      <div className="font-medium text-primary">Web Development</div>
-                      <div className="text-secondary">React, Node.js</div>
-                    </div>
-                    <div className="p-2 bg-gray-200 dark:bg-dark-600 rounded text-center">
-                      <div className="text-lg mb-1">☁️</div>
-                      <div className="font-medium text-primary">Cloud Tech</div>
-                      <div className="text-secondary">AWS, Azure</div>
-                    </div>
-                    <div className="p-2 bg-gray-200 dark:bg-dark-600 rounded text-center">
-                      <div className="text-lg mb-1">💻</div>
-                      <div className="font-medium text-primary">Programming</div>
-                      <div className="text-secondary">Python, Java</div>
-                    </div>
-                    <div className="p-2 bg-gray-200 dark:bg-dark-600 rounded text-center">
-                      <div className="text-lg mb-1">🔒</div>
-                      <div className="font-medium text-primary">Security</div>
-                      <div className="text-secondary">Cybersecurity</div>
+                    <div className="grid grid-cols-2 gap-3 text-xs mt-4">
+                      <div className="p-2 bg-gray-200 dark:bg-dark-600 rounded text-center">
+                        <div className="text-lg mb-1">☁️</div>
+                        <div className="font-medium text-primary">Cloud Tech</div>
+                        <div className="text-secondary">AWS, Azure</div>
+                      </div>
+                      <div className="p-2 bg-gray-200 dark:bg-dark-600 rounded text-center">
+                        <div className="text-lg mb-1">💻</div>
+                        <div className="font-medium text-primary">Programming</div>
+                        <div className="text-secondary">Python, Java</div>
+                      </div>
+                      <div className="p-2 bg-gray-200 dark:bg-dark-600 rounded text-center">
+                        <div className="text-lg mb-1">🔒</div>
+                        <div className="font-medium text-primary">Security</div>
+                        <div className="text-secondary">Cybersecurity</div>
+                      </div>
                     </div>
                   </div>
                 </div>
