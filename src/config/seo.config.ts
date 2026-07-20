@@ -77,9 +77,9 @@ export const getSEOConfig = (page: string): SEOConfig => {
 export const generateStructuredData = (page: string) => {
   const config = getSEOConfig(page);
   
-  const baseData = {
-    "@context": "https://schema.org",
+  const personSchema = {
     "@type": "Person",
+    "@id": "https://shivanshu-portfolio-seven.vercel.app/#person",
     "name": "Shivanshu Singh",
     "jobTitle": "Full Stack Developer",
     "description": config.description,
@@ -113,26 +113,60 @@ export const generateStructuredData = (page: string) => {
     "telephone": "+919140284510",
     "email": "kshatriyasarkar214@gmail.com",
     "gender": "Male",
-    "nationality": "Indian",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Freelance",
-      "url": "https://shivanshu-portfolio-seven.vercel.app/"
+    "nationality": "Indian"
+  };
+
+  const serviceSchema = {
+    "@type": "ProfessionalService",
+    "@id": "https://shivanshu-portfolio-seven.vercel.app/#service",
+    "name": "Shivanshu Singh - Freelance Full Stack Developer",
+    "description": "Professional software development services in Lucknow, India, specializing in React, Django, Python, Node.js, and custom web applications.",
+    "url": "https://shivanshu-portfolio-seven.vercel.app/",
+    "image": "https://shivanshu-portfolio-seven.vercel.app/circular_favicon.png",
+    "priceRange": "$$",
+    "telephone": "+919140284510",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Lucknow",
+      "addressRegion": "Uttar Pradesh",
+      "postalCode": "226001",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "26.8467",
+      "longitude": "80.9462"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "founder": {
+      "@type": "Person",
+      "@id": "https://shivanshu-portfolio-seven.vercel.app/#person"
     }
   };
 
+  const graph: any[] = [personSchema, serviceSchema];
+
   // Add page-specific structured data
   if (page === 'projects') {
-    return {
-      "@context": "https://schema.org",
+    graph.push({
       "@type": "CollectionPage",
+      "@id": "https://shivanshu-portfolio-seven.vercel.app/projects/#webpage",
       "name": "Projects Portfolio | Shivanshu Singh",
       "description": config.description,
       "url": config.url,
-      "about": baseData,
+      "about": {
+        "@id": "https://shivanshu-portfolio-seven.vercel.app/#person"
+      },
       "mainEntity": {
         "@type": "ItemList",
-        "numberOfItems": 6,
+        "numberOfItems": 4,
         "itemListElement": [
           {
             "@type": "SoftwareApplication",
@@ -164,19 +198,24 @@ export const generateStructuredData = (page: string) => {
           }
         ]
       }
-    };
+    });
   }
 
   if (page === 'contact') {
-    return {
-      "@context": "https://schema.org",
+    graph.push({
       "@type": "ContactPage",
+      "@id": "https://shivanshu-portfolio-seven.vercel.app/contact/#webpage",
       "name": "Contact Shivanshu Singh",
       "description": config.description,
       "url": config.url,
-      "mainEntity": baseData
-    };
+      "mainEntity": {
+        "@id": "https://shivanshu-portfolio-seven.vercel.app/#person"
+      }
+    });
   }
 
-  return baseData;
+  return {
+    "@context": "https://schema.org",
+    "@graph": graph
+  };
 };
