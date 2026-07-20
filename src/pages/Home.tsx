@@ -7,24 +7,24 @@ import { Star, Quote } from 'lucide-react'
 const Home = () => {
   const featuredProjects = [
     {
-      title: "Chess App",
-      description: "A modern chess application built with TypeScript, featuring an intuitive interface for playing chess games. Implemented with clean architecture and responsive design for an engaging chess experience.",
-      technologies: ["TypeScript", "React", "Chess.js", "Responsive Design"],
-      image: "/chess-app.jpg",
-      liveUrl: "https://chess-app-coral.vercel.app/",
-      githubUrl: "https://github.com/Shivanshu9120/chess-app.git",
-      year: "2024",
-      category: "Frontend"
+      title: "Seamaster AI",
+      description: "Developed as a software engineer intern at Meteorites Lab, Seamaster AI is a RAG-based AI chatbot designed specifically for seafarers. Engineered the retrieval-augmented generation pipeline, optimized for local search engines using SEO & GEO positioning, designed timeline components, and crafted a highly intuitive, responsive UI.",
+      technologies: ["Next.js", "Python", "Flask", "Strapi", "RAG", "Tailwind CSS"],
+      image: "/project7.jpg",
+      liveUrl: "https://seamasterai.com",
+      year: "2026",
+      category: "Full Stack",
+      pinned: true
     },
     {
-      title: "Cricket Scorer",
-      description: "A comprehensive cricket scoring application that helps track matches, runs, wickets, and player statistics in real-time. Built with modern web technologies for cricket enthusiasts and scorekeepers.",
-      technologies: ["React", "TypeScript", "Local Storage", "Responsive Design"],
-      image: "/cricket-scorer.jpg",
-      liveUrl: "https://cricket-scorer-puce.vercel.app/",
-      githubUrl: "https://github.com/Shivanshu9120/cricket-scorer.git",
-      year: "2024",
-      category: "Frontend"
+      title: "Explorers",
+      description: "Developed as a software engineer intern at Meteorites Lab, Explorers is a curation and recommendation platform allowing users to discover, build, and share themed lists of movies, books, music, travel spots, and local guidebooks. Led the engineering team as project lead, oversaw DevOps pipelines & CI/CD deployment, integrated AI for automated guide curation, and implemented Razorpay for payment processing.",
+      technologies: ["React", "Strapi", "AI Integration", "DevOps", "Razorpay", "Tailwind CSS"],
+      image: "/project8.jpg",
+      liveUrl: "https://explorers.earth",
+      year: "2026",
+      category: "Full Stack",
+      pinned: true
     },
     {
       title: "Full Stack Club Management Website",
@@ -35,24 +35,30 @@ const Home = () => {
       githubUrl: "https://github.com/Shivanshu9120/OptimixClub_frontend.git",
       backendUrl: "https://github.com/Shivanshu9120/OptimixClub_Backend.git",
       year: "2024",
-      category: "Full Stack"
+      category: "Full Stack",
+      pinned: true
+    },
+    {
+      title: "Full Stack Chat Application",
+      description: "Built a real-time chat app using MERN stack and Socket.io, supporting 1-on-1 chats, group chats, and group creation. Implemented JWT and bcrypt-based authentication for secure user login and data protection. Designed a responsive and modern UI using React and Tailwind CSS for a seamless messaging experience.",
+      technologies: ["MERN Stack", "Socket.io", "JWT", "bcrypt", "React", "Tailwind CSS"],
+      image: "/project2.jpg",
+      liveUrl: "https://messenger-eight-gamma.vercel.app",
+      githubUrl: "https://github.com/Shivanshu9120/Messenger-frontend.git",
+      backendUrl: "https://github.com/Shivanshu9120/Messenger-backend.git",
+      year: "2024",
+      category: "Full Stack",
+      pinned: true
     }
   ]
 
   const testimonials = [
     {
-      name: "CodSoft",
-      role: "Web Developer Intern",
-      content: "During this internship, Shivanshu developed responsive web applications, collaborated on UI/UX design, and implemented backend services. Successfully contributed to projects that enhanced user engagement and system efficiency.",
+      name: "Meteorites Lab",
+      role: "Software Engineer Intern",
+      content: "Shivanshu was a core developer during his internship. He successfully engineered the retrieval pipelines for Seamaster AI, led the frontend and DevOps setup for Explorers, and integrated complex APIs like Razorpay and AI generators with high reliability.",
       rating: 5
-    },
-    {
-      name: "CodSoft",
-      role: "Machine Learning Intern",
-      content: "During this internship, Shivanshu developed machine learning models, collaborated on UI/UX design, and implemented backend services. Successfully contributed to projects that enhanced user engagement and system efficiency.",
-      rating: 5
-    },
-    
+    }
   ]
 
   return (

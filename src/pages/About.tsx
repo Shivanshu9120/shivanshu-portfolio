@@ -8,30 +8,35 @@ const About = () => {
       category: "Programming Languages",
       skills: [
         { name: "C++", level: "Advanced", projects: 2, icon: "⚡" },
-        { name: "Python", level: "Advanced", projects: 2, icon: "🐍" },
-        { name: "JavaScript", level: "Intermediate", projects: 6, icon: "🟨" }
+        { name: "Python", level: "Advanced", projects: 3, icon: "🐍" },
+        { name: "JavaScript", level: "Advanced", projects: 8, icon: "🟨" }
       ]
     },
     {
       category: "Web Development",
       skills: [
-        { name: "React", level: "Intermediate", projects: 4, icon: "⚛️" },
-        { name: "HTML/CSS", level: "Advanced", projects: 10, icon: "🌐" },
-        { name: "Bootstrap", level: "Intermediate", projects: 3, icon: "🎨" }
+        { name: "React", level: "Advanced", projects: 6, icon: "⚛️" },
+        { name: "Next.js", level: "Advanced", projects: 3, icon: "▲" },
+        { name: "Django", level: "Beginner", projects: 1, icon: "🎯" },
+        { name: "Flask", level: "Beginner", projects: 2, icon: "🧪" },
+        { name: "HTML/CSS", level: "Advanced", projects: 10, icon: "🌐" }
       ]
     },
     {
       category: "Databases & APIs",
       skills: [
-        { name: "MongoDB", level: "Intermediate", projects: 3, icon: "🍃" },
-        { name: "REST API", level: "Intermediate", projects: 3, icon: "🔗" }
+        { name: "MongoDB", level: "Advanced", projects: 5, icon: "🍃" },
+        { name: "REST API", level: "Advanced", projects: 5, icon: "🔗" },
+        { name: "GraphQL", level: "Advanced", projects: 2, icon: "🧬" }
       ]
     },
     {
-      category: "Tools & Platforms",
+      category: "DevOps & Cloud Tech",
       skills: [
-        { name: "Git & GitHub", level: "Intermediate", projects: 15, icon: "📚" },
-        { name: "Docker", level: "Beginner", projects: 2, icon: "🐳" }
+        { name: "Git & GitHub", level: "Advanced", projects: 15, icon: "📚" },
+        { name: "CI/CD & DevOps", level: "Intermediate", projects: 3, icon: "🔄" },
+        { name: "Cloud Technologies", level: "Intermediate", projects: 3, icon: "☁️" },
+        { name: "Docker", level: "Intermediate", projects: 2, icon: "🐳" }
       ]
     }
   ]
@@ -70,9 +75,9 @@ const About = () => {
               About Me
             </h1>
             <p className="text-secondary max-w-3xl mx-auto text-lg">
-              As an IT student, I am deeply passionate about exploring the intricate world of technology 
-              and its endless possibilities. From coding to algorithms, databases to artificial intelligence, 
-              I am eager to delve into every facet of this dynamic field.
+              As an IT graduate, I am deeply passionate about exploring the intricate world of technology 
+              and its endless possibilities. From building full-stack platforms and data pipelines to deploying systems, 
+              I love turning complex problems into elegant software solutions.
             </p>
           </motion.div>
 
@@ -87,14 +92,14 @@ const About = () => {
                                  <h2 className="text-2xl font-bold mb-4 text-primary">My Overview</h2>
                    <div className="space-y-4 text-secondary">
                      <p>
-                       As an IT student at Rajkiya Engineering College, Azamgarh, I am deeply passionate about exploring the intricate world of technology 
-                       and its endless possibilities. From coding to algorithms, databases to artificial intelligence, 
+                       As an Information Technology graduate from Rajkiya Engineering College, Azamgarh, I am deeply passionate about exploring the intricate world of technology 
+                       and its endless possibilities. From coding algorithms to engineering AI pipelines and databases, 
                        I am eager to delve into every facet of this dynamic field.
                      </p>
                      <p>
-                       With a strong foundation in programming languages like C++ and Python, coupled with my 
-                       enthusiasm for problem-solving, I am excited to embark on this journey of discovery alongside 
-                       my peers and mentors.
+                       With a strong foundation in languages like C++, Python, and JavaScript, coupled with hands-on 
+                       industry internship experience and DevOps practices, I enjoy collaborating on complex engineering 
+                       challenges to deliver high-quality solutions.
                      </p>
                      <p>
                        I believe that through collaboration, creativity, and continuous learning, we can harness 
@@ -221,8 +226,11 @@ const About = () => {
                       <span className="text-sm text-secondary">2022 - 2026</span>
                     </div>
                     <p className="text-primary-500 font-medium">Rajkiya Engineering College, Azamgarh</p>
+                    <div className="flex items-center justify-between mt-2">
+                      <span className="text-sm text-secondary">Graduated (Batch of 2022-26)</span>
+                      <span className="text-sm text-green-500 font-medium">8.62 CGPA</span>
+                    </div>
                     <ul className="text-sm text-secondary mt-2 space-y-1">
-                      <li>• Currently pursuing B.Tech in Information Technology</li>
                       <li>• Relevant coursework: Data Structures & Algorithms, OOP, OS, DBMS, Computer Networking</li>
                     </ul>
                   </div>
@@ -251,51 +259,39 @@ const About = () => {
                 transition={{ duration: 0.5, delay: 1.0 }}
                 className="card p-6"
               >
-                <h3 className="text-xl font-bold mb-4 text-primary-500">Certifications</h3>
-                <div className="space-y-4">
+                 <h3 className="text-xl font-bold mb-4 text-primary-500">Certifications</h3>
+                <div className="space-y-6">
                   {/* HackerRank Certifications */}
-                  <div className="space-y-4">
-                    <div className="p-4 bg-gray-100 dark:bg-dark-700 rounded-lg">
-                      <h4 className="font-semibold text-primary mb-2">Frontend Developer (React)</h4>
-                      <p className="text-sm text-secondary mb-3">HackerRank</p>
-                      <div className="certificate-iframe-container w-full h-80 border border-gray-300 dark:border-dark-600 rounded bg-gray-50 dark:bg-dark-800">
-                        <iframe
-                          src="https://www.hackerrank.com/certificates/iframe/c943ce70b4e0"
-                          title="Frontend Developer (React) Certificate"
-                          allowFullScreen
-                          loading="lazy"
-                        />
+                  <div className="grid sm:grid-cols-2 gap-4">
+                    <div className="p-4 bg-gray-100 dark:bg-dark-700 rounded-lg flex flex-col justify-between h-full">
+                      <div>
+                        <h4 className="font-semibold text-primary mb-1">Frontend Developer (React)</h4>
+                        <p className="text-xs text-secondary mb-3">HackerRank</p>
                       </div>
                       <a
                         href="https://www.hackerrank.com/certificates/iframe/c943ce70b4e0"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="btn-primary inline-flex items-center text-sm w-full justify-center mt-3"
+                        className="btn-primary inline-flex items-center text-xs justify-center w-full py-2"
                       >
-                        View Full Certificate
-                        <ExternalLink className="w-3 h-3 ml-1" />
+                        View Certificate
+                        <ExternalLink className="w-3.5 h-3.5 ml-1" />
                       </a>
                     </div>
                     
-                    <div className="p-4 bg-gray-100 dark:bg-dark-700 rounded-lg">
-                      <h4 className="font-semibold text-primary mb-2">CSS (Basic)</h4>
-                      <p className="text-sm text-secondary mb-3">HackerRank</p>
-                      <div className="certificate-iframe-container w-full h-80 border border-gray-300 dark:border-dark-600 rounded bg-gray-50 dark:bg-dark-800">
-                        <iframe
-                          src="https://www.hackerrank.com/certificates/iframe/abc6fe7fbcdb"
-                          title="CSS (Basic) Certificate"
-                          allowFullScreen
-                          loading="lazy"
-                        />
+                    <div className="p-4 bg-gray-100 dark:bg-dark-700 rounded-lg flex flex-col justify-between h-full">
+                      <div>
+                        <h4 className="font-semibold text-primary mb-1">CSS (Basic)</h4>
+                        <p className="text-xs text-secondary mb-3">HackerRank</p>
                       </div>
                       <a
                         href="https://www.hackerrank.com/certificates/iframe/abc6fe7fbcdb"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="btn-primary inline-flex items-center text-sm w-full justify-center mt-3"
+                        className="btn-primary inline-flex items-center text-xs justify-center w-full py-2"
                       >
-                        View Full Certificate
-                        <ExternalLink className="w-3 h-3 ml-1" />
+                        View Certificate
+                        <ExternalLink className="w-3.5 h-3.5 ml-1" />
                       </a>
                     </div>
                   </div>

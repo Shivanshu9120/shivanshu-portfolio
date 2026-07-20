@@ -10,16 +10,15 @@ const Experience = () => {
       duration: "June 2025 - Present",
       location: "Remote",
       certificate: "",
-      description: "Engineered responsive interfaces with Next.js and TypeScript, resulting in seamless user experiences. Integrated Strapi CMS using REST/GraphQL APIs while implementing AI features via OpenAI/Pinecone. Developed a modular component library that enhanced development efficiency and code reusability by 25%.",
+      description: "Developed and shipped two major production platforms: Seamaster AI (a RAG-based AI chatbot for seafarers) and Explorers (a curation and recommendation platform). Led end-to-end development, managed DevOps & CI/CD pipelines, engineered search retrieval pipelines, integrated payment systems, and implemented AI features.",
       achievements: [
-        "Engineered responsive interfaces with Next.js and TypeScript",
-        "Integrated Strapi CMS using REST/GraphQL APIs",
-        "Implemented AI features via OpenAI/Pinecone",
-        "Developed modular component library enhancing efficiency by 25%",
-        "Created seamless user experiences across platforms",
-        "Collaborated on cutting-edge AI integration projects"
+        "Led the engineering for Explorers, managing DevOps, system architecture, and CI/CD pipelines",
+        "Engineered retrieval-augmented generation (RAG) data pipelines and SEO/GEO optimizations for Seamaster AI",
+        "Integrated AI services for automated guide curation and Razorpay payment gateway into production",
+        "Designed and implemented custom timeline features and highly interactive UI components",
+        "Integrated Strapi headless CMS with Next.js/React frontends using REST and GraphQL APIs"
       ],
-      technologies: ["Next.js", "TypeScript", "React", "Strapi CMS", "OpenAI API", "Pinecone", "GraphQL"],
+      technologies: ["Next.js", "React", "Python", "Flask", "Strapi CMS", "RAG", "AI Integration", "DevOps", "CI/CD", "Razorpay", "Tailwind CSS"],
       image: "/meteorite.png"
     },
   ]

@@ -71,6 +71,26 @@ const Projects = () => {
 
     // Full Stack Projects
     {
+      title: "Seamaster AI",
+      description: "Developed as a software engineer intern at Meteorites Lab, Seamaster AI is a RAG-based AI chatbot designed specifically for seafarers. Engineered the retrieval-augmented generation pipeline, optimized for local search engines using SEO & GEO positioning, designed timeline components, and crafted a highly intuitive, responsive UI.",
+      technologies: ["Next.js", "Python", "Flask", "Strapi", "RAG", "Tailwind CSS"],
+      image: "/project7.jpg",
+      liveUrl: "https://seamasterai.com",
+      year: "2026",
+      category: "Full Stack",
+      pinned: true
+    },
+    {
+      title: "Explorers",
+      description: "Developed as a software engineer intern at Meteorites Lab, Explorers is a curation and recommendation platform allowing users to discover, build, and share themed lists of movies, books, music, travel spots, and local guidebooks. Led the engineering team as project lead, oversaw DevOps pipelines & CI/CD deployment, integrated AI for automated guide curation, and implemented Razorpay for payment processing.",
+      technologies: ["React", "Strapi", "AI Integration", "DevOps", "Razorpay", "Tailwind CSS"],
+      image: "/project8.jpg",
+      liveUrl: "https://explorers.earth",
+      year: "2026",
+      category: "Full Stack",
+      pinned: true
+    },
+    {
       title: "Full Stack Club Management Website",
       description: "Developed a MERN stack platform with role-based dashboards where Superadmin assigns roles, Admins manage events and notices, and Users register for events requiring approval. Implemented authentication, approval workflows, and seamless CRUD operations for efficient club management. Designed a responsive, modern UI using React and Tailwind CSS for an optimized user experience.",
       technologies: ["MERN Stack", "React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
@@ -79,7 +99,8 @@ const Projects = () => {
       githubUrl: "https://github.com/Shivanshu9120/OptimixClub_frontend.git",
       backendUrl: "https://github.com/Shivanshu9120/OptimixClub_Backend.git",
       year: "2024",
-      category: "Full Stack"
+      category: "Full Stack",
+      pinned: true
     },
     {
       title: "Full Stack Chat Application",
@@ -90,17 +111,8 @@ const Projects = () => {
       githubUrl: "https://github.com/Shivanshu9120/Messenger-frontend.git",
       backendUrl: "https://github.com/Shivanshu9120/Messenger-backend.git",
       year: "2024",
-      category: "Full Stack"
-    },
-    {
-      title: "Full Stack Blog Website",
-      description: "Developed a full-stack blog website using Next.js, React, and Tailwind CSS, focusing on responsive design and user-friendly interface. Gained hands-on experience in dynamic content rendering, API integration, and modern web development practices.",
-      technologies: ["Next.js", "React", "Tailwind CSS", "API Integration"],
-      image: "/project4.jpg",
-      liveUrl: "https://my-blog-app-pbw7-jdqgzmuwq-shivanshu-singhs-projects-3c042d22.vercel.app/",
-      githubUrl: "https://github.com/Shivanshu9120/My-blog-app.git",
-      year: "2024",
-      category: "Full Stack"
+      category: "Full Stack",
+      pinned: true
     },
 
     // Machine Learning Projects
@@ -148,9 +160,10 @@ const Projects = () => {
 
   const filters = ['All', 'Frontend', 'Backend', 'Full Stack', 'ML/AI']
 
-  const filteredProjects = activeFilter === 'All' 
+  const filteredProjects = (activeFilter === 'All' 
     ? projects 
     : projects.filter(project => project.category === activeFilter)
+  ).sort((a, b) => ((b as any).pinned ? 1 : 0) - ((a as any).pinned ? 1 : 0))
 
   return (
     <>

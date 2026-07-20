@@ -26,7 +26,7 @@ const Navbar = () => {
           <Link to="/" className="flex items-center space-x-3 text-2xl font-bold text-primary-500">
             <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-500/30 flex-shrink-0">
               <img 
-                src="/Profile.png" 
+                src="/Portfolio profile.png" 
                 alt="Shivanshu Singh" 
                 className="w-full h-full object-cover"
               />

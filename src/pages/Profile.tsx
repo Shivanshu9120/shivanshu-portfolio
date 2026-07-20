@@ -68,10 +68,10 @@ const Profile = () => {
       stats: "500+ Problems Solved"
     },
     {
-      title: "Project Creator",
-      description: "Developed 10+ full-stack projects with modern technologies",
-      icon: "🚀",
-      stats: "10+ Projects"
+      title: "SSB Recommended",
+      description: "Recommended for Indian Air Force",
+      icon: "🎖️",
+      stats: "Recommended"
     },
     {
       title: "Team Player",
@@ -80,8 +80,8 @@ const Profile = () => {
       stats: "2 Internships"
     },
     {
-      title: "GATE 2025",
-      description: "Qualified GATE 2025 for Computer Science and Information Technology",
+      title: "GATE 2026",
+      description: "Qualified GATE 2026 for Computer Science and Information Technology",
       icon: "📈",
       stats: "Qualified"
     }
