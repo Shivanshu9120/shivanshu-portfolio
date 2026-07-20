@@ -27,10 +27,10 @@ const SEO: React.FC<SEOProps> = ({
   const pageConfig = page ? getSEOConfig(page) : null;
   const seoConfig = {
     title: title || pageConfig?.title || "Shivanshu Singh - Full Stack Developer | React, Django, Python Expert",
-    description: description || pageConfig?.title || "Professional Full Stack Developer specializing in React, Django, Python, and modern web technologies. Building exceptional user experiences and solving complex problems.",
-    keywords: keywords || pageConfig?.keywords || "Full Stack Developer, React Developer, Django Developer, Python Developer, Web Development, Frontend Developer, Backend Developer, Portfolio, Shivanshu Singh",
-    image: image || pageConfig?.image || "https://shivanshu-portfolio.com/og-image.jpg",
-    url: url || pageConfig?.url || `https://shivanshu-portfolio.com${location.pathname}`,
+    description: description || pageConfig?.description || "Professional Full Stack Developer specializing in React, Django, Python, and modern web technologies. Building exceptional user experiences and solving complex problems with innovative solutions.",
+    keywords: keywords || pageConfig?.keywords || "Full Stack Developer, React Developer, Django Developer, Python Developer, Web Development, Frontend Developer, Backend Developer, Portfolio, Shivanshu Singh, Shivanshu Singh Portfolio, Shivanshu Singh Lucknow",
+    image: image || pageConfig?.image || "https://shivanshu-portfolio-seven.vercel.app/og-image.jpg",
+    url: url || pageConfig?.url || `https://shivanshu-portfolio-seven.vercel.app${location.pathname}`,
     type: type || pageConfig?.type || "website"
   };
   
@@ -77,6 +77,12 @@ const SEO: React.FC<SEOProps> = ({
     // Update other meta tags
     updateNameTag('description', seoConfig.description);
     updateNameTag('keywords', seoConfig.keywords);
+
+    // Update geographic targeting (GEO) tags
+    updateNameTag('geo.region', 'IN-UP');
+    updateNameTag('geo.placename', 'Lucknow');
+    updateNameTag('geo.position', '26.8467;80.9462');
+    updateNameTag('ICBM', '26.8467, 80.9462');
 
     // Update canonical URL
     let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
